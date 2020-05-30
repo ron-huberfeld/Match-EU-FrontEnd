@@ -1,8 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Important Scripts 
+Available in the project directory: 
 
-## Available Scripts
+## `npm run lint-tests`
 
-In the project directory, you can run:
+Test for linting and prettier issues, as a precaution, use before pushing any commit to make sure build succeeds on Github Actions.
+
+To fix linting and prettier issues use:
+
+## `npm run lint-fixes`
+
+## `npm run css-build`
+
+Using this compiles the scss file App.scss into its processed form i.e. App.css.
+Learn more about scss at [https://sass-lang.com/documentation/syntax](https://sass-lang.com/documentation/syntax)
+## NOTE : This will over ride any changes done in App.css and not contained in App.scss, hence, always use App.scss and then compile it into App.css before pushing changes.
+One possibility is adding a watcher node package that uatomatically compiles the scss file into css whenever a change is made.
 
 ### `npm start`
 
