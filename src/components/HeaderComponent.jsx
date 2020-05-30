@@ -64,8 +64,7 @@ class Header extends Component {
                         <NavbarBrand className="mr-auto" href="/">
                             <img
                                 src="assets/images/logo.jpg"
-                                height="60"
-                                width="120"
+                                className="logo-nav"
                                 alt="MatchEU"
                             />
                         </NavbarBrand>
