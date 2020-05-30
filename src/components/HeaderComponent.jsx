@@ -5,7 +5,6 @@ import React, { Component } from 'react';
 import {
     Navbar,
     NavbarBrand,
-    Jumbotron,
     Nav,
     NavbarToggler,
     Collapse,
@@ -58,14 +57,14 @@ class Header extends Component {
     render() {
         return (
             <>
-                <Navbar dark expand="md">
+                <Navbar light expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto" href="/">
                             <img
-                                src="assets/images/logo.png"
-                                height="30"
-                                width="41"
+                                src="assets/images/logo.jpg"
+                                height="60"
+                                width="120"
                                 alt="MatchEU"
                             />
                         </NavbarBrand>
@@ -73,7 +72,7 @@ class Header extends Component {
                             <Nav navbar>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/idea">
-                                        <span className="fa fa-flash ml-4" />{' '}
+                                        <span className="fa fa-rocket fa-lg ml-4" />{' '}
                                         Idea
                                     </NavLink>
                                 </NavItem>
@@ -82,45 +81,39 @@ class Header extends Component {
                                         className="nav-link"
                                         to="/aboutapp"
                                     >
-                                        <span className="fa fa-info " />{' '}
+                                        <span className="fa fa-mobile fa-lg " />{' '}
                                         App
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/tech">
-                                        <span className="fa fa-list" />{' '}
+                                        <span className="fa fa-cog fa-spin fa-lg" />{' '}
                                         Tech
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/team">
-                                        <span className="fa fa-group" />{' '}
+                                        <span className="fa fa-lg fa-group" />{' '}
                                         Team
                                     </NavLink>
                                 </NavItem>
                             </Nav>
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                    <Button outline onClick={this.toggleModal}>
-                                        <span className="fa fa-sign-in fa-lg" />
-                                        Login
+                                    <Button
+                                        className="btn"
+                                        outline
+                                        onClick={this.toggleModal}
+                                    >
+                                        <span className="fa fa-sign-in" />
+                                        {'  '}
+                                        LOGIN
                                     </Button>
                                 </NavItem>
                             </Nav>
                         </Collapse>
                     </div>
                 </Navbar>
-
-                <Jumbotron>
-                    <div className="container">
-                        <div className="row row-header">
-                            <div className="col-12 col-sm-6">
-                                <h1>MatchEU</h1>
-                                <p>We present our MatchEU app for pupils.</p>
-                            </div>
-                        </div>
-                    </div>
-                </Jumbotron>
                 <Modal
                     isOpen={this.state.isModalOpen}
                     toggle={this.toggleModal}

@@ -3,10 +3,11 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Header from './HeaderComponent';
-
-function TestComponent() {
-    return <span>Test</span>;
-  }
+import Banner from './BannerComponent';
+import Idea from './IdeaComponent';
+import AboutApp from './AboutAppComponent';
+import Tech from './TechComponent';
+import Team from './TeamComponent';
 
 class Main extends Component {
     constructor(props) {
@@ -18,11 +19,12 @@ class Main extends Component {
             <div>
                 <Header />
                 <Switch>
-                    <Route path="/idea" component={TestComponent} />
-                    <Route path="/aboutapp" component={TestComponent} />
-                    <Route path="/tech" component={TestComponent} />
-                    <Route exact path="/team" component={TestComponent} />
-                    <Redirect to="/idea" />
+                    <Route exact path="/" component={Banner} />
+                    <Route path="/idea" component={Idea} />
+                    <Route path="/aboutapp" component={AboutApp} />
+                    <Route path="/tech" component={Tech} />
+                    <Route exact path="/team" component={Team} />
+                    <Redirect to="/" />
                 </Switch>
                 {
                     // <Footer />
