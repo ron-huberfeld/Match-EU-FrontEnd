@@ -181,12 +181,12 @@ body {
   }
   
   
-  .section.top_banner_bg {
-    background: hsl(220, 93%, 6%) url("/assets/images/banner.png") no-repeat fixed 0 0 / cover ;
-      padding-top: 80px;
+ #home {
+    background: hsl(220, 93%, 6%) url("/assets/images/top_banner.png") no-repeat fixed 0 0 / cover ;
+    padding-top: 80px;
     position: relative;
   }
-  .section.top_banner_bg::before {
+ #home::before {
       position:absolute;
       top:0px;
       left:0px;
@@ -477,7 +477,7 @@ body {
             transition: all 0.5s ease;
   }
   
-  .services_detail span i:hover {
+  section.services_detail span i:hover {
     border-radius: 50%;
     -webkit-transform: rotate(360deg);
        -moz-transform: rotate(360deg);
@@ -487,7 +487,7 @@ body {
   }
   
   
-  section.our_service_bg {
+  #technologies {
     background: url(/assets/images/services_bg-1.webp) repeat scroll 0 0;
     position:relative;
       padding-bottom: 0;
@@ -496,7 +496,7 @@ body {
   
   
   
-  section.our_service_bg:before {
+#technologies:before {
       position:absolute;
       top:0px;
       left:0px;

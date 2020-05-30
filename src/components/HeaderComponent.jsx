@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /* eslint-disable no-return-assign */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/no-access-state-in-setstate */
