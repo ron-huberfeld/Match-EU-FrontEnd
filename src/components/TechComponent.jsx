@@ -60,7 +60,7 @@ class Tech extends Component {
                                             </span>
                                             <p>
                                                 {' '}
-                                                For frontend side we used HTML5
+                                                Frontend Side we have used HTML5
                                                 CSS3 and JQuery.
                                             </p>
                                         </li>
@@ -74,8 +74,9 @@ class Tech extends Component {
                                             </span>
                                             <p>
                                                 {' '}
-                                                Also for backend we used Python,
-                                                Flask, Google Classroom APIs
+                                                Backend Side we have used
+                                                Python, Flask, Google Classroom
+                                                APIs
                                             </p>
                                         </li>
 
@@ -89,7 +90,7 @@ class Tech extends Component {
                                             </span>
                                             <p>
                                                 {' '}
-                                                And for deployment we used
+                                                For deployment we have used
                                                 Heroku and PostgreSQL.
                                             </p>
                                         </li>
