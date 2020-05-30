@@ -63,7 +63,7 @@ class Banner extends Component {
                 >
                     <div className="container">
                         <div className="row justify-content-around">
-                            <div className="col-md-5 ">
+                            <div className="col-12 col-md-5">
                                 <div className="present_img">
                                     <img
                                         src="assets/images/screen6.png"
@@ -71,7 +71,7 @@ class Banner extends Component {
                                     />
                                 </div>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-12 col-md-7">
                                 <div className="present">
                                     <h1>
                                         {' '}
@@ -86,6 +86,13 @@ class Banner extends Component {
                                         className="btn btn-default btn-primary"
                                         type="submit"
                                         onClick={this.handleSubscribe}
+                                        style={{
+                                            fontSize: '20px',
+                                            paddingTop: '0.5rem',
+                                            paddingBottom: '0.5rem',
+                                            paddingLeft: '1rem',
+                                            paddingRight: '1rem',
+                                        }}
                                     >
                                         {' '}
                                         <i
@@ -112,6 +119,13 @@ class Banner extends Component {
                                             <Button
                                                 className="btn btn-default"
                                                 type="submit"
+                                                style={{
+                                                    fontSize: '30px',
+                                                    paddingTop: '0rem',
+                                                    paddingBottom: '0rem',
+                                                    paddingLeft: '1rem',
+                                                    paddingRight: '1rem',
+                                                }}
                                             >
                                                 {' '}
                                                 <i
@@ -123,7 +137,7 @@ class Banner extends Component {
                                         </a>
 
                                         <span>
-                                            {' '}
+                                            <br />
                                             <a
                                                 target="_blank"
                                                 href="https://www.youtube.com/watch?v=rsC90eeg1dU&amp;feature=youtu.be"
@@ -132,6 +146,13 @@ class Banner extends Component {
                                                 <Button
                                                     className="btn btn-default"
                                                     type="submit"
+                                                    style={{
+                                                        fontSize: '30px',
+                                                        paddingTop: '0rem',
+                                                        paddingBottom: '0rem',
+                                                        paddingLeft: '1rem',
+                                                        paddingRight: '1rem',
+                                                    }}
                                                 >
                                                     <i
                                                         className="fa fa-youtube"

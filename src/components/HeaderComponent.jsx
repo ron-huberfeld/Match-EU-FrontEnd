@@ -68,8 +68,16 @@ class Header extends Component {
                                 alt="MatchEU"
                             />
                         </NavbarBrand>
-                        <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
+                        <Collapse
+                            isOpen={this.state.isNavOpen}
+                            navbar
+                            color="primary"
+                        >
+                            <Nav
+                                variant="pills"
+                                className="ml-auto"
+                                defaultActiveKey="/"
+                            >
                                 <NavItem>
                                     <NavLink className="nav-link" to="/idea">
                                         <span className="fa fa-rocket fa-lg ml-4" />{' '}
@@ -97,17 +105,14 @@ class Header extends Component {
                                         Team
                                     </NavLink>
                                 </NavItem>
-                            </Nav>
-                            <Nav className="ml-auto" navbar>
                                 <NavItem>
                                     <Button
-                                        className="btn"
-                                        outline
+                                        color="primary"
                                         onClick={this.toggleModal}
                                     >
                                         <span className="fa fa-sign-in" />
                                         {'  '}
-                                        LOGIN
+                                        <strong>LOGIN</strong>
                                     </Button>
                                 </NavItem>
                             </Nav>

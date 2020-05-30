@@ -1651,8 +1651,9 @@ body {
           #header .logo a { margin-left: 20px;}
   }
   
+  //Present image view here
   @media screen and (max-width: 1000px) {
-      .present_img{display: none;}
+      .present_img{display: inline-block;}
       section {text-align: center;}
       .ordered :nth-child(2) { order: 3; }
   }
