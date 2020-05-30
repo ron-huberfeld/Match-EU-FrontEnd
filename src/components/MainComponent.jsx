@@ -19,7 +19,19 @@ class Main extends Component {
             <div>
                 <Header />
                 <Switch>
-                    <Route exact path="/" component={Banner} />
+                    <Route
+                        exact
+                        path="/"
+                        component={() => (
+                            <div>
+                                <Banner />
+                                <Idea />
+                                <AboutApp />
+                                <Tech />
+                                <Team />
+                            </div>
+                        )}
+                    />
                     <Route path="/idea" component={Idea} />
                     <Route path="/aboutapp" component={AboutApp} />
                     <Route path="/tech" component={Tech} />
