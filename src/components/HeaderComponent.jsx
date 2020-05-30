@@ -73,8 +73,8 @@ class Header extends Component {
                             <Nav navbar>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/idea">
-                                        <span className="fa fa-home fa-lg" />{' '}
-                                        Our Idea
+                                        <span className="fa fa-flash ml-4" />{' '}
+                                        Idea
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -82,20 +82,20 @@ class Header extends Component {
                                         className="nav-link"
                                         to="/aboutapp"
                                     >
-                                        <span className="fa fa-info fa-lg" />{' '}
-                                        About App
+                                        <span className="fa fa-info " />{' '}
+                                        App
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/tech">
-                                        <span className="fa fa-list fa-lg" />{' '}
-                                        Technologies
+                                        <span className="fa fa-list" />{' '}
+                                        Tech
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/team">
-                                        <span className="fa fa-address-card fa-lg" />{' '}
-                                        About Team
+                                        <span className="fa fa-group" />{' '}
+                                        Team
                                     </NavLink>
                                 </NavItem>
                             </Nav>
