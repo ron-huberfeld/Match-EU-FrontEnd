@@ -2,6 +2,7 @@
   "name": "match-eu",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ron-huberfeld.github.io/Match-EU-FrontEnd/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",

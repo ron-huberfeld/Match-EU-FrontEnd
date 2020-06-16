@@ -53,49 +53,45 @@ class Idea extends Component {
                                         <div className="circle">
                                             <img
                                                 className="smaller"
-                                                src="assets/images/icon1.png"
+                                                src="assets/images/people.jpg"
                                                 alt=""
                                             />
                                         </div>
                                         <h5>Connect</h5>
-                                        Cross-border within whole EU.
+                                        Connect pupils around the globe
                                     </li>
-
                                     <li>
                                         <div className="circle right">
                                             <img
                                                 className="smaller"
-                                                src="assets/images/icon2.png"
+                                                src="assets/images/match.png"
                                                 alt=""
                                             />
                                         </div>
                                         <h5>Match</h5>
-                                        With tandem, mentor or partner.
+                                        Match pupils with mentors
                                     </li>
-
                                     <li>
+                                        <h5>Learn</h5>
+                                        Foster cultural identity
                                         <div className="circle">
                                             <img
                                                 className="smaller"
-                                                src="assets/images/icon3.png"
+                                                src="assets/images/flag.png"
                                                 alt=""
                                             />
                                         </div>
-                                        <h5>Identify</h5>
-                                        Foster european solidarity.
                                     </li>
-
                                     <li>
+                                        <h5> Motivate </h5>
+                                        Motivate pupils going forward
                                         <div className="circle right">
                                             <img
                                                 className="smaller"
-                                                src="assets/images/icon4.png"
+                                                src="assets/images/motivate2.png"
                                                 alt=""
                                             />
                                         </div>
-                                        <h5> Motivate </h5>
-                                        Exchange useful advice to stay
-                                        motivated.
                                     </li>
                                 </ul>
                             </div>
