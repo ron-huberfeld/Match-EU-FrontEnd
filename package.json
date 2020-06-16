@@ -32,6 +32,7 @@
     "lint-tests": "npm run eslint-test;npm run prettier-test",
     "lint-fixes": "npm run eslint-fix;npm run prettier-fix",
     "css-build": "node-sass --omit-source-map-url src/App.scss src/App.css",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
