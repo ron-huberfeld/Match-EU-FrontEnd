@@ -3,23 +3,12 @@
 /* eslint-disable react/prefer-stateless-function */
 /* eslint-disable no-useless-constructor */
 import React, { Component } from 'react';
-import {
-    Navbar,
-    NavbarBrand,
-    Jumbotron,
-    Nav,
-    NavbarToggler,
-    Collapse,
-    NavItem,
-    Button,
-    Modal,
-    ModalHeader,
-    ModalBody,
-    Form,
-    FormGroup,
-    Label,
-    Input,
-} from 'reactstrap';
+import { Jumbotron } from 'reactstrap';
+import EUmap from "../resources/images/flag-map.svg.png"
+import connect from "../resources/images/people.jpg"
+import match from "../resources/images/match.png"
+import learn from "../resources/images/flag.png"
+import motivate from "../resources/images/motivate2.png"
 
 class Idea extends Component {
     constructor(props) {
@@ -28,7 +17,7 @@ class Idea extends Component {
 
     render() {
         return (
-            <Jumbotron id="idea" className="primary-bg idea">
+            <Jumbotron id="idea" class="primary-bg idea">
                 <div className="container">
                     <div className="row">
                         <div className="section_heading">
@@ -53,7 +42,7 @@ class Idea extends Component {
                                         <div className="circle">
                                             <img
                                                 className="smaller"
-                                                src="assets/images/people.jpg"
+                                                src={connect}
                                                 alt=""
                                             />
                                         </div>
@@ -64,7 +53,7 @@ class Idea extends Component {
                                         <div className="circle right">
                                             <img
                                                 className="smaller"
-                                                src="assets/images/match.png"
+                                                src={match}
                                                 alt=""
                                             />
                                         </div>
@@ -77,7 +66,7 @@ class Idea extends Component {
                                         <div className="circle">
                                             <img
                                                 className="smaller"
-                                                src="assets/images/flag.png"
+                                                src={learn}
                                                 alt=""
                                             />
                                         </div>
@@ -88,7 +77,7 @@ class Idea extends Component {
                                         <div className="circle right">
                                             <img
                                                 className="smaller"
-                                                src="assets/images/motivate2.png"
+                                                src={motivate}
                                                 alt=""
                                             />
                                         </div>
@@ -100,7 +89,7 @@ class Idea extends Component {
                         <div className="col-md-6">
                             <div className="features_img pull-left">
                                 <img
-                                    src="assets/images/flag-map.svg.png"
+                                    src={EUmap}
                                     alt="EU Map"
                                     className="EUmap"
                                 />

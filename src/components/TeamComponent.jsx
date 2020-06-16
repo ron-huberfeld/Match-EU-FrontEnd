@@ -3,25 +3,18 @@
 /* eslint-disable react/prefer-stateless-function */
 /* eslint-disable no-useless-constructor */
 import React, { Component } from 'react';
-import {
-    Navbar,
-    NavbarBrand,
-    Jumbotron,
-    Nav,
-    NavbarToggler,
-    Collapse,
-    NavItem,
-    Button,
-    Modal,
-    ModalHeader,
-    ModalBody,
-    Form,
-    FormGroup,
-    Label,
-    Input,
-} from 'reactstrap';
+import { Jumbotron } from 'reactstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Nathalie from "../resources/images/Team2.jpg"
+import Marko from "../resources/images/Team3.jpg"
+import Nastja from "../resources/images/Team5.jpg"
+import Misrah from "../resources/images/Team.jpg"
+import Isabel from "../resources/images/Team6.jpg"
+import Paula from "../resources/images/Team7.jpg"
+import Olha from "../resources/images/Team8.jpg"
+import Ron from "../resources/images/Team9.jpg"
+import Vanessa from "../resources/images/Team10.jpg"
 
 class Team extends Component {
     constructor(props) {
@@ -55,7 +48,7 @@ class Team extends Component {
         };
         return (
             <>
-                <Jumbotron id="team" className="primary-bg">
+                <Jumbotron id="team" class="primary-bg">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12">
@@ -126,20 +119,20 @@ class Team extends Component {
                         >
 
                             <div className="card">
-                                <div >
+                                <div className="member_img">
                                     <img
-                                        src="assets/images/Team2.jpg"
+                                        src={Nathalie}
                                         alt="Nathalie Haußmann"
                                     />
                                 </div>
                                 <div className="member_name">
-                                    <h5> Nathalie Haußmann </h5>
+                                    <h5> Nathalie Haußmann</h5>
                                 </div>
                             </div>
                             <div className="card">
-                                <div >
+                                <div className="member_img">
                                     <img
-                                        src="assets/images/Team3.jpg"
+                                        src={Marko}
                                         alt="Marko Shiva Pavlovic"
                                     />
                                 </div>
@@ -147,10 +140,11 @@ class Team extends Component {
                                     <h5> Marko Shiva Pavlovic </h5>
                                 </div>
                             </div>
+
                             <div className="card">
-                                <div >
+                                <div className="member_img">
                                     <img
-                                        src="assets/images/Team5.jpg"
+                                        src={Nastja}
                                         alt="Nastja Gatsenko"
                                     />
                                 </div>
@@ -159,20 +153,20 @@ class Team extends Component {
                                 </div>
                             </div>
                             <div className="card">
-                                <div >
+                                <div className="member_img">
                                     <img
-                                        src="assets/images/Team.jpg"
+                                        src={Misrah}
                                         alt="Misrah Mohamed"
                                     />
                                 </div>
                                 <div className="member_name">
-                                    <h5> Misrah Mohamed </h5>
+                                    <h5>Misrah Mohamed</h5>
                                 </div>
                             </div>
                             <div className="card">
-                                <div >
+                                <div className="member_img">
                                     <img
-                                        src="assets/images/Team6.jpg"
+                                        src={Isabel}
                                         alt="Isabel Arens"
                                     />
                                 </div>
@@ -181,9 +175,9 @@ class Team extends Component {
                                 </div>
                             </div>
                             <div className="card">
-                                <div >
+                                <div className="member_img">
                                     <img
-                                        src="assets/images/Team7.jpg"
+                                        src={Paula}
                                         alt="Paula Rodriguez"
                                     />
                                 </div>
@@ -192,20 +186,20 @@ class Team extends Component {
                                 </div>
                             </div>
                             <div className="card">
-                                <div >
+                                <div className="member_img">
                                     <img
-                                        src="assets/images/Team8.jpg"
+                                        src={Olha}
                                         alt="Olha Onofriichuk"
                                     />
                                 </div>
                                 <div className="member_name">
-                                    <h5> Olha Onofriichuk </h5>
+                                    <h5> Olha Onofriichuk</h5>
                                 </div>
                             </div>
                             <div className="card">
                                 <div className="member_img">
                                     <img
-                                        src="assets/images/Team10.jpg"
+                                        src={Vanessa}
                                         alt="Vanessa Guillen"
                                     />
                                 </div>
@@ -216,7 +210,7 @@ class Team extends Component {
                             <div className="card">
                                 <div >
                                     <img
-                                        src="assets/images/Team9.jpg"
+                                        src={Ron}
                                         alt="Ron Huberfeld"
                                     />
                                 </div>
@@ -224,6 +218,7 @@ class Team extends Component {
                                     <h5> Ron Huberfeld </h5>
                                 </div>
                             </div>
+
                         </Carousel>
                     </div>
                     <div

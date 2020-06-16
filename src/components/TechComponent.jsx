@@ -3,23 +3,9 @@
 /* eslint-disable react/prefer-stateless-function */
 /* eslint-disable no-useless-constructor */
 import React, { Component } from 'react';
-import {
-    Navbar,
-    NavbarBrand,
-    Jumbotron,
-    Nav,
-    NavbarToggler,
-    Collapse,
-    NavItem,
-    Button,
-    Modal,
-    ModalHeader,
-    ModalBody,
-    Form,
-    FormGroup,
-    Label,
-    Input,
-} from 'reactstrap';
+import { Jumbotron } from 'reactstrap';
+import screen5 from "../resources/images/screen5.jpg"
+import screen4 from "../resources/images/screen4.jpg"
 
 class Tech extends Component {
     constructor(props) {
@@ -30,7 +16,7 @@ class Tech extends Component {
         return (
             <Jumbotron
                 id="technologies"
-                className="section padding_bottom_none our_service_bg"
+                class="section padding_bottom_none our_service_bg"
             >
                 <div className="container">
                     <div className="row">
@@ -101,14 +87,14 @@ class Tech extends Component {
                             <div className="col-md-7 group-image">
                                 <div className="services_img">
                                     <img
-                                        src="assets/images/screen5.jpg"
+                                        src={screen5}
                                         alt="App Prototype Screen 1"
                                     />
                                 </div>
 
                                 <div className="services_img_n">
                                     <img
-                                        src="assets/images/screen4.jpg"
+                                        src={screen4}
                                         alt="App Prototype Screen 2"
                                     />
                                 </div>

@@ -27,6 +27,7 @@ import {
     Label,
     Input,
 } from 'reactstrap';
+import banner from '../resources/images/screen6.png'
 
 class Banner extends Component {
     constructor(props) {
@@ -66,7 +67,7 @@ class Banner extends Component {
                             <div className="col-12 col-md-5">
                                 <div className="present_img">
                                     <img
-                                        src="assets/images/screen6.png"
+                                        src={banner}
                                         alt="Banner"
                                     />
                                 </div>

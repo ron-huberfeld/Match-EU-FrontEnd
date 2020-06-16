@@ -20,6 +20,7 @@ import {
     Input,
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import logo from "../resources/images/logo.jpg"
 
 class Header extends Component {
     constructor(props) {
@@ -63,7 +64,7 @@ class Header extends Component {
                         <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto" href="/">
                             <img
-                                src="assets/images/logo.jpg"
+                                src={logo}
                                 className="logo-nav"
                                 alt="MatchEU"
                             />
@@ -76,7 +77,7 @@ class Header extends Component {
                             <Nav
                                 variant="pills"
                                 className="ml-auto"
-                                // defaultActiveKey="/"
+                                defaultActiveKey="/"
                             >
                                 <NavItem>
                                     <NavLink className="nav-link" to="/idea">
