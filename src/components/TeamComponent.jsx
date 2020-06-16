@@ -55,7 +55,7 @@ class Team extends Component {
         };
         return (
             <>
-                <Jumbotron id="team" class="primary-bg">
+                <Jumbotron id="team" className="primary-bg">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12">

@@ -28,7 +28,7 @@ class AboutApp extends Component {
 
     render() {
         return (
-            <Jumbotron id="about" class="primary-bg">
+            <Jumbotron id="about" className="primary-bg">
                 <div className="container">
                     <div className="row ordered">
                         <div className="section_heading">

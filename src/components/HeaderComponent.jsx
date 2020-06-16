@@ -76,7 +76,7 @@ class Header extends Component {
                             <Nav
                                 variant="pills"
                                 className="ml-auto"
-                                defaultActiveKey="/"
+                                // defaultActiveKey="/"
                             >
                                 <NavItem>
                                     <NavLink className="nav-link" to="/idea">

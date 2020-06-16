@@ -28,7 +28,7 @@ class Idea extends Component {
 
     render() {
         return (
-            <Jumbotron id="idea" class="primary-bg idea">
+            <Jumbotron id="idea" className="primary-bg idea">
                 <div className="container">
                     <div className="row">
                         <div className="section_heading">
