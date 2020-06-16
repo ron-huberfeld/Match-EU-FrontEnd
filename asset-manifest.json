@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Match-EU-FrontEnd/static/css/main.d9f1547f.chunk.css",
+    "main.js": "/Match-EU-FrontEnd/static/js/main.fa3ffddb.chunk.js",
+    "main.js.map": "/Match-EU-FrontEnd/static/js/main.fa3ffddb.chunk.js.map",
+    "runtime-main.js": "/Match-EU-FrontEnd/static/js/runtime-main.e806c9cd.js",
+    "runtime-main.js.map": "/Match-EU-FrontEnd/static/js/runtime-main.e806c9cd.js.map",
+    "static/css/2.760d6bf1.chunk.css": "/Match-EU-FrontEnd/static/css/2.760d6bf1.chunk.css",
+    "static/js/2.1873cefc.chunk.js": "/Match-EU-FrontEnd/static/js/2.1873cefc.chunk.js",
+    "static/js/2.1873cefc.chunk.js.map": "/Match-EU-FrontEnd/static/js/2.1873cefc.chunk.js.map",
+    "index.html": "/Match-EU-FrontEnd/index.html",
+    "precache-manifest.f4381f226ea3174103939301bd2ac576.js": "/Match-EU-FrontEnd/precache-manifest.f4381f226ea3174103939301bd2ac576.js",
+    "service-worker.js": "/Match-EU-FrontEnd/service-worker.js",
+    "static/css/2.760d6bf1.chunk.css.map": "/Match-EU-FrontEnd/static/css/2.760d6bf1.chunk.css.map",
+    "static/css/main.d9f1547f.chunk.css.map": "/Match-EU-FrontEnd/static/css/main.d9f1547f.chunk.css.map",
+    "static/js/2.1873cefc.chunk.js.LICENSE.txt": "/Match-EU-FrontEnd/static/js/2.1873cefc.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/Match-EU-FrontEnd/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/styles.css": "/Match-EU-FrontEnd/static/media/revicons.2feb69cc.eot"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e806c9cd.js",
+    "static/css/2.760d6bf1.chunk.css",
+    "static/js/2.1873cefc.chunk.js",
+    "static/css/main.d9f1547f.chunk.css",
+    "static/js/main.fa3ffddb.chunk.js"
+  ]
+}
