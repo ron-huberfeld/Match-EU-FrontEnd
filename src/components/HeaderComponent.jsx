@@ -62,7 +62,7 @@ class Header extends Component {
                 <Navbar light expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand className="mr-auto" href="/">
+                        <NavbarBrand className="mr-auto" href="/Match-EU-FrontEnd/">
                             <img
                                 src={logo}
                                 className="logo-nav"
