@@ -1,5 +1,5 @@
 ## Important Scripts 
-Available in the project directory: Adding changes for test ronhu
+Available in the project directory: 
 
 ## `npm run lint-tests`
 
