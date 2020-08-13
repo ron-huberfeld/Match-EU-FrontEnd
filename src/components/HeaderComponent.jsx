@@ -5,7 +5,6 @@
 import React, { Component } from 'react';
 import {
     Navbar,
-    NavbarBrand,
     Nav,
     NavbarToggler,
     Collapse,
@@ -19,8 +18,10 @@ import {
     Label,
     Input,
 } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
-import logo from "../resources/images/logo.jpg"
+import { Transition } from 'react-transition-group';
+import { NavLink, Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import logo from '../resources/images/logo.jpg';
 
 class Header extends Component {
     constructor(props) {
@@ -62,22 +63,20 @@ class Header extends Component {
                 <Navbar light expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand className="mr-auto" href="/Match-EU-FrontEnd/">
-                            <img
-                                src={logo}
-                                className="logo-nav"
-                                alt="MatchEU"
-                            />
-                        </NavbarBrand>
-                        <Collapse
-                            isOpen={this.state.isNavOpen}
-                            navbar
-                            color="primary"
-                        >
+                        <Nav>
+                            <Link className="nav-link" to="/">
+                                <img
+                                    src={logo}
+                                    className="logo-nav"
+                                    alt="MatchEU"
+                                />
+                            </Link>
+                        </Nav>
+                        <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav
                                 variant="pills"
                                 className="ml-auto"
-                                defaultActiveKey="/"
+                                // defaultActiveKey="/"
                             >
                                 <NavItem>
                                     <NavLink className="nav-link" to="/idea">
@@ -107,14 +106,15 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <Button
-                                        color="primary"
-                                        onClick={this.toggleModal}
-                                    >
-                                        <span className="fa fa-sign-in" />
-                                        {'  '}
-                                        <strong>LOGIN</strong>
-                                    </Button>
+                                    <NavLink className="nav-link" to="/login">
+                                        <Button
+                                            color="primary"
+                                            // onClick={this.toggleModal}
+                                        >
+                                            <span className="fa fa-sign-in" />
+                                            <strong>LOGIN</strong>
+                                        </Button>
+                                    </NavLink>
                                 </NavItem>
                             </Nav>
                         </Collapse>
@@ -174,5 +174,19 @@ class Header extends Component {
         );
     }
 }
+
+Collapse.contextTypes = {
+    ...Transition.propTypes,
+    isOpen: PropTypes.bool,
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node,
+    ]),
+    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+    className: PropTypes.node,
+    navbar: PropTypes.bool,
+    color: PropTypes.string,
+    timeout: PropTypes.number,
+};
 
 export default Header;

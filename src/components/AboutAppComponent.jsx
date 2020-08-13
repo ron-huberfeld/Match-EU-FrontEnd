@@ -4,7 +4,7 @@
 /* eslint-disable no-useless-constructor */
 import React, { Component } from 'react';
 import { Jumbotron } from 'reactstrap';
-import screen1 from "../resources/images/screen1.png"
+import screen1 from '../resources/images/screen1.png';
 
 class AboutApp extends Component {
     constructor(props) {
@@ -13,7 +13,7 @@ class AboutApp extends Component {
 
     render() {
         return (
-            <Jumbotron id="about" class="primary-bg">
+            <Jumbotron id="about" className="primary-bg">
                 <div className="container">
                     <div className="row ordered">
                         <div className="section_heading">
@@ -64,10 +64,7 @@ class AboutApp extends Component {
 
                         <div className="col-md-4 ">
                             <div className="workng_img">
-                                <img
-                                    src={screen1}
-                                    alt="App Prototype"
-                                />
+                                <img src={screen1} alt="App Prototype" />
                             </div>
                         </div>
 

@@ -16,7 +16,7 @@ class Tech extends Component {
         return (
             <Jumbotron
                 id="technologies"
-                class="section padding_bottom_none our_service_bg"
+                className="section padding_bottom_none our_service_bg"
             >
                 <div className="container">
                     <div className="row">

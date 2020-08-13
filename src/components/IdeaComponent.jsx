@@ -4,11 +4,11 @@
 /* eslint-disable no-useless-constructor */
 import React, { Component } from 'react';
 import { Jumbotron } from 'reactstrap';
-import EUmap from "../resources/images/flag-map.svg.png"
-import connect from "../resources/images/people.jpg"
-import match from "../resources/images/match.png"
-import learn from "../resources/images/flag.png"
-import motivate from "../resources/images/motivate2.png"
+import EUmap from '../resources/images/flag-map.svg.png';
+import connect from '../resources/images/people.jpg';
+import match from '../resources/images/match.png';
+import learn from '../resources/images/flag.png';
+import motivate from '../resources/images/motivate2.png';
 
 class Idea extends Component {
     constructor(props) {
@@ -17,7 +17,7 @@ class Idea extends Component {
 
     render() {
         return (
-            <Jumbotron id="idea" class="primary-bg idea">
+            <Jumbotron id="idea" className="primary-bg idea">
                 <div className="container">
                     <div className="row">
                         <div className="section_heading">
