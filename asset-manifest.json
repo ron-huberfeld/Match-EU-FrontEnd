@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Match-EU-FrontEnd/static/css/main.ad8ee156.chunk.css",
-    "main.js": "/Match-EU-FrontEnd/static/js/main.0d9c3267.chunk.js",
-    "main.js.map": "/Match-EU-FrontEnd/static/js/main.0d9c3267.chunk.js.map",
+    "main.js": "/Match-EU-FrontEnd/static/js/main.0196c41e.chunk.js",
+    "main.js.map": "/Match-EU-FrontEnd/static/js/main.0196c41e.chunk.js.map",
     "runtime-main.js": "/Match-EU-FrontEnd/static/js/runtime-main.e806c9cd.js",
     "runtime-main.js.map": "/Match-EU-FrontEnd/static/js/runtime-main.e806c9cd.js.map",
     "static/css/2.760d6bf1.chunk.css": "/Match-EU-FrontEnd/static/css/2.760d6bf1.chunk.css",
-    "static/js/2.73c940dc.chunk.js": "/Match-EU-FrontEnd/static/js/2.73c940dc.chunk.js",
-    "static/js/2.73c940dc.chunk.js.map": "/Match-EU-FrontEnd/static/js/2.73c940dc.chunk.js.map",
+    "static/js/2.550df365.chunk.js": "/Match-EU-FrontEnd/static/js/2.550df365.chunk.js",
+    "static/js/2.550df365.chunk.js.map": "/Match-EU-FrontEnd/static/js/2.550df365.chunk.js.map",
     "index.html": "/Match-EU-FrontEnd/index.html",
-    "precache-manifest.880f899dfa1414e7beb6fb720bec0568.js": "/Match-EU-FrontEnd/precache-manifest.880f899dfa1414e7beb6fb720bec0568.js",
+    "precache-manifest.0904a838589d1fe28d32ee6842ed373d.js": "/Match-EU-FrontEnd/precache-manifest.0904a838589d1fe28d32ee6842ed373d.js",
     "service-worker.js": "/Match-EU-FrontEnd/service-worker.js",
     "static/css/2.760d6bf1.chunk.css.map": "/Match-EU-FrontEnd/static/css/2.760d6bf1.chunk.css.map",
     "static/css/main.ad8ee156.chunk.css.map": "/Match-EU-FrontEnd/static/css/main.ad8ee156.chunk.css.map",
-    "static/js/2.73c940dc.chunk.js.LICENSE.txt": "/Match-EU-FrontEnd/static/js/2.73c940dc.chunk.js.LICENSE.txt",
+    "static/js/2.550df365.chunk.js.LICENSE.txt": "/Match-EU-FrontEnd/static/js/2.550df365.chunk.js.LICENSE.txt",
     "static/media/Team.jpg": "/Match-EU-FrontEnd/static/media/Team.deb015cf.jpg",
     "static/media/Team10.jpg": "/Match-EU-FrontEnd/static/media/Team10.d708d6b6.jpg",
     "static/media/Team2.jpg": "/Match-EU-FrontEnd/static/media/Team2.6967ddc3.jpg",
@@ -36,8 +36,8 @@
   "entrypoints": [
     "static/js/runtime-main.e806c9cd.js",
     "static/css/2.760d6bf1.chunk.css",
-    "static/js/2.73c940dc.chunk.js",
+    "static/js/2.550df365.chunk.js",
     "static/css/main.ad8ee156.chunk.css",
-    "static/js/main.0d9c3267.chunk.js"
+    "static/js/main.0196c41e.chunk.js"
   ]
 }
