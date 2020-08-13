@@ -8,6 +8,9 @@ import Idea from './IdeaComponent';
 import AboutApp from './AboutAppComponent';
 import Tech from './TechComponent';
 import Team from './TeamComponent';
+import LoginForm from './LoginComponent';
+import RegisterForm from './RegisterComponent';
+import UsersList from './UsersList';
 
 class Main extends Component {
     constructor(props) {
@@ -36,6 +39,9 @@ class Main extends Component {
                     <Route path="/aboutapp" component={AboutApp} />
                     <Route path="/tech" component={Tech} />
                     <Route exact path="/team" component={Team} />
+                    <Route exact path="/login" component={LoginForm} />
+                    <Route exact path="/register" component={RegisterForm} />
+                    <Route exact path="/users" component={UsersList} />
                     <Redirect to="/" />
                 </Switch>
                 {
