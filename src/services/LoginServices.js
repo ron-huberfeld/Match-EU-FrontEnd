@@ -1,4 +1,4 @@
-import http from '../http-common';
+import http from '../utils/http-common';
 
 const login = (email, password) => {
     return http.post('/login', {
