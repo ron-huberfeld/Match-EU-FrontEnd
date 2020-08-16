@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Redirect } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers';
@@ -12,6 +12,7 @@ import GradientButton from './common/GradientButton';
 import Label from './common/Label';
 import FormSuccess from './common/FormSuccess';
 import FormError from './common/FormError';
+import { AuthContext } from '../context/AuthContext';
 
 const schema = yup.object().shape({
     firstName: yup.string(),
@@ -21,6 +22,7 @@ const schema = yup.object().shape({
 });
 
 const RegisterForm = () => {
+    const authContext = useContext(AuthContext);
     const { register, handleSubmit, errors } = useForm({
         resolver: yupResolver(schema),
     });
@@ -30,10 +32,9 @@ const RegisterForm = () => {
     const [loginLoading, setLoginLoading] = useState(false);
     const onSubmit = async (data) => {
         try {
-            console.log(data);
             setLoginLoading(true);
             const { result } = await LoginServices.register(data);
-
+            authContext.setAuthState(result);
             setSignupSuccess(data.message);
             setSignupError(null);
 
@@ -42,8 +43,7 @@ const RegisterForm = () => {
             }, 700);
         } catch (error) {
             setLoginLoading(false);
-            console.log(error);
-            const { errData } = error;
+            // const { errData } = error;
             setSignupError('Error occured');
             setSignupSuccess(null);
         }
