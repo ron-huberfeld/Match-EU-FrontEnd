@@ -38,10 +38,10 @@ class Main extends Component {
                     <Route path="/idea" component={Idea} />
                     <Route path="/aboutapp" component={AboutApp} />
                     <Route path="/tech" component={Tech} />
-                    <Route exact path="/team" component={Team} />
-                    <Route exact path="/login" component={LoginForm} />
-                    <Route exact path="/register" component={RegisterForm} />
-                    <Route exact path="/users" component={UsersList} />
+                    <Route path="/team" component={Team} />
+                    <Route path="/login" component={LoginForm} />
+                    <Route path="/register" component={RegisterForm} />
+                    <Route path="/users" component={UsersList} />
                     <Redirect to="/" />
                 </Switch>
                 {

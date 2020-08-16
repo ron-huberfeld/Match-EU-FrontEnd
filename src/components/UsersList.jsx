@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import UsersServices from '../services/UsersServices';
 import { Jumbotron } from 'reactstrap';
+import UsersServices from '../services/UsersServices';
 
 const UsersList = () => {
     const [users, setUsers] = useState([]);

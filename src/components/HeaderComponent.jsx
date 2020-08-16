@@ -43,10 +43,15 @@ const Header = () => {
                             </NavLink>
                         </NavItem>
                         <NavItem>
+                            <NavLink className="nav-link" to="/register">
+                                <Button color="outline-primary">Sign Up</Button>
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
                             <NavLink className="nav-link" to="/login">
                                 <Button color="primary">
                                     <span className="fa fa-sign-in" />
-                                    <strong>LOGIN</strong>
+                                    <strong>Log In</strong>
                                 </Button>
                             </NavLink>
                         </NavItem>

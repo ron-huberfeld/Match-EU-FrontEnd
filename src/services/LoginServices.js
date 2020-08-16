@@ -1,14 +1,14 @@
-import http from '../utils/http-common';
+import publicFetch from '../utils/fetch';
 
 const login = (email, password) => {
-    return http.post('/login', {
+    return publicFetch.post('/login', {
         email,
         password,
     });
 };
 
 const register = (email, password) => {
-    return http.post('/register', {
+    return publicFetch.post('/register', {
         email,
         password,
     });

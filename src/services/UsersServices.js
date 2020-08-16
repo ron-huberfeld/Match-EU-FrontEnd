@@ -1,27 +1,27 @@
-import http from '../utils/http-common';
+import publicFetch from '../utils/fetch';
 
 const getAll = () => {
-    return http.get('/users');
+    return publicFetch.get('/users');
 };
 
 const get = (id) => {
-    return http.get(`/users/${id}`);
+    return publicFetch.get(`/users/${id}`);
 };
 
 const create = (data) => {
-    return http.post('/users', data);
+    return publicFetch.post('/users', data);
 };
 
 const update = (id, data) => {
-    return http.put(`/users/${id}`, data);
+    return publicFetch.put(`/users/${id}`, data);
 };
 
 const remove = (id) => {
-    return http.delete(`/users/${id}`);
+    return publicFetch.delete(`/users/${id}`);
 };
 
 const findByName = (name) => {
-    return http.get(`/users?name=${name}`);
+    return publicFetch.get(`/users?name=${name}`);
 };
 
 export default {
