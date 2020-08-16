@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Match-EU-FrontEnd/static/css/main.f8306dfc.chunk.css",
-    "main.js": "/Match-EU-FrontEnd/static/js/main.f45099a4.chunk.js",
-    "main.js.map": "/Match-EU-FrontEnd/static/js/main.f45099a4.chunk.js.map",
+    "main.css": "/Match-EU-FrontEnd/static/css/main.e85cb781.chunk.css",
+    "main.js": "/Match-EU-FrontEnd/static/js/main.b864ce91.chunk.js",
+    "main.js.map": "/Match-EU-FrontEnd/static/js/main.b864ce91.chunk.js.map",
     "runtime-main.js": "/Match-EU-FrontEnd/static/js/runtime-main.e806c9cd.js",
     "runtime-main.js.map": "/Match-EU-FrontEnd/static/js/runtime-main.e806c9cd.js.map",
     "static/css/2.684bc416.chunk.css": "/Match-EU-FrontEnd/static/css/2.684bc416.chunk.css",
-    "static/js/2.fc6e2b62.chunk.js": "/Match-EU-FrontEnd/static/js/2.fc6e2b62.chunk.js",
-    "static/js/2.fc6e2b62.chunk.js.map": "/Match-EU-FrontEnd/static/js/2.fc6e2b62.chunk.js.map",
+    "static/js/2.2ff7c2ae.chunk.js": "/Match-EU-FrontEnd/static/js/2.2ff7c2ae.chunk.js",
+    "static/js/2.2ff7c2ae.chunk.js.map": "/Match-EU-FrontEnd/static/js/2.2ff7c2ae.chunk.js.map",
     "index.html": "/Match-EU-FrontEnd/index.html",
-    "precache-manifest.0a15320fd32911e8c0331b9c4c974334.js": "/Match-EU-FrontEnd/precache-manifest.0a15320fd32911e8c0331b9c4c974334.js",
+    "precache-manifest.7f55fec35e0f721b183e8e2a1f3db78a.js": "/Match-EU-FrontEnd/precache-manifest.7f55fec35e0f721b183e8e2a1f3db78a.js",
     "service-worker.js": "/Match-EU-FrontEnd/service-worker.js",
     "static/css/2.684bc416.chunk.css.map": "/Match-EU-FrontEnd/static/css/2.684bc416.chunk.css.map",
-    "static/css/main.f8306dfc.chunk.css.map": "/Match-EU-FrontEnd/static/css/main.f8306dfc.chunk.css.map",
-    "static/js/2.fc6e2b62.chunk.js.LICENSE.txt": "/Match-EU-FrontEnd/static/js/2.fc6e2b62.chunk.js.LICENSE.txt",
+    "static/css/main.e85cb781.chunk.css.map": "/Match-EU-FrontEnd/static/css/main.e85cb781.chunk.css.map",
+    "static/js/2.2ff7c2ae.chunk.js.LICENSE.txt": "/Match-EU-FrontEnd/static/js/2.2ff7c2ae.chunk.js.LICENSE.txt",
     "static/media/Team.jpg": "/Match-EU-FrontEnd/static/media/Team.deb015cf.jpg",
     "static/media/Team10.jpg": "/Match-EU-FrontEnd/static/media/Team10.d708d6b6.jpg",
     "static/media/Team2.jpg": "/Match-EU-FrontEnd/static/media/Team2.6967ddc3.jpg",
@@ -36,8 +36,8 @@
   "entrypoints": [
     "static/js/runtime-main.e806c9cd.js",
     "static/css/2.684bc416.chunk.css",
-    "static/js/2.fc6e2b62.chunk.js",
-    "static/css/main.f8306dfc.chunk.css",
-    "static/js/main.f45099a4.chunk.js"
+    "static/js/2.2ff7c2ae.chunk.js",
+    "static/css/main.e85cb781.chunk.css",
+    "static/js/main.b864ce91.chunk.js"
   ]
 }
