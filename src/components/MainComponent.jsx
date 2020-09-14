@@ -10,7 +10,7 @@ import Tech from './TechComponent';
 import Team from './TeamComponent';
 import LoginForm from './LoginComponent';
 import RegisterForm from './RegisterComponent';
-import Users from './Users';
+import Dashboard from '../pages/Dashboard';
 
 class Main extends Component {
     constructor(props) {
@@ -41,7 +41,7 @@ class Main extends Component {
                     <Route path="/team" component={Team} />
                     <Route path="/login" component={LoginForm} />
                     <Route path="/register" component={RegisterForm} />
-                    <Route path="/users" component={Users} />
+                    <Route path="/dashboard" component={Dashboard} />
                     <Redirect to="/" />
                 </Switch>
                 {

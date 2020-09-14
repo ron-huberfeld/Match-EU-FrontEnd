@@ -1,77 +1,77 @@
 {
-  "name": "match-eu",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://ron-huberfeld.github.io/Match-EU-FrontEnd/",
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
-    "@hookform/resolvers": "^0.1.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.19.2",
-    "bootstrap": "^4.5.2",
-    "bootstrap-social": "^5.1.1",
-    "classnames": "^2.2.6",
-    "font-awesome": "^4.7.0",
-    "node-sass": "^4.14.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.3.0",
-    "react-dom": "^16.13.1",
-    "react-hook-form": "^6.4.0",
-    "react-multi-carousel": "^2.5.5",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "react-slick": "^0.26.1",
-    "react-transition-group": "^4.4.1",
-    "reactstrap": "^8.4.1",
-    "yup": "^0.29.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "eslint-test": "eslint './**/*.js' './**/*.jsx'",
-    "eslint-fix": "eslint --fix './**/*.js' './**/*.jsx'",
-    "prettier-test": "prettier --check './**/*.js' './**/*.jsx' './**/*.css'",
-    "prettier-fix": "prettier --write './**/*.js' './**/*.jsx' './**/*.css'",
-    "lint-tests": "npm run eslint-test;npm run prettier-test",
-    "lint-fixes": "npm run eslint-fix;npm run prettier-fix",
-    "css-build": "node-sass --omit-source-map-url src/App.scss src/App.css",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.3",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.1",
-    "gh-pages": "^3.0.0",
-    "node-sass": "^4.14.1",
-    "prettier": "^2.0.5"
-  }
+    "name": "match-eu",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://ron-huberfeld.github.io/Match-EU-FrontEnd/",
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.30",
+        "@fortawesome/free-solid-svg-icons": "^5.14.0",
+        "@fortawesome/react-fontawesome": "^0.1.11",
+        "@hookform/resolvers": "^0.1.0",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.5.0",
+        "@testing-library/user-event": "^7.2.1",
+        "axios": "^0.19.2",
+        "bootstrap": "^4.5.2",
+        "bootstrap-social": "^5.1.1",
+        "classnames": "^2.2.6",
+        "font-awesome": "^4.7.0",
+        "node-sass": "^4.14.1",
+        "prop-types": "^15.7.2",
+        "react": "^16.13.1",
+        "react-bootstrap": "^1.3.0",
+        "react-dom": "^16.13.1",
+        "react-hook-form": "^6.4.0",
+        "react-multi-carousel": "^2.5.5",
+        "react-router": "^5.2.0",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "3.4.1",
+        "react-slick": "^0.26.1",
+        "react-transition-group": "^4.4.1",
+        "reactstrap": "^8.4.1",
+        "yup": "^0.29.3"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "eslint-test": "eslint './**/*.js' './**/*.jsx'",
+        "eslint-fix": "eslint --fix './**/*.js' './**/*.jsx'",
+        "prettier-test": "prettier --check './**/*.js' './**/*.jsx' './**/*.css'",
+        "prettier-fix": "prettier --write './**/*.js' './**/*.jsx' './**/*.css'",
+        "lint-tests": "npm run eslint-test;npm run prettier-test",
+        "lint-fixes": "npm run eslint-fix;npm run prettier-fix",
+        "css-build": "node-sass --omit-source-map-url src/App.scss src/App.css",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb": "^18.1.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-prettier": "^3.1.3",
+        "eslint-plugin-react": "^7.19.0",
+        "eslint-plugin-react-hooks": "^2.5.1",
+        "gh-pages": "^3.0.0",
+        "node-sass": "^4.14.1",
+        "prettier": "^2.0.5"
+    }
 }
