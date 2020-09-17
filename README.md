@@ -10,11 +10,16 @@
     <blockquote>
     npm install
     </blockquote>
-3. Run the frontend application:
+3. Run the frontend application: </br>
+    option 1:
     <blockquote>
     npm start
     </blockquote>
-
+    option 2 - using docker-compose:
+    <blockquote>
+    docker-compose up -d --build
+    </blockquote>
+    
     Runs the app in the development mode.<br />
     Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
