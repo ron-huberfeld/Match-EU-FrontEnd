@@ -7,3 +7,4 @@ cache:
 script:
   - "npm run eslint-test"
   - "npm run prettier-test"
+  - "npm run build --if-present"
