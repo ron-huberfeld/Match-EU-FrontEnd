@@ -1,16 +1,14 @@
 import publicFetch from '../utils/fetch';
 
-const login = (email, password) => {
+const login = (data) => {
     return publicFetch.post('login', {
-        email,
-        password,
+        data,
     });
 };
 
-const register = (email, password) => {
+const register = (data) => {
     return publicFetch.post('register', {
-        email,
-        password,
+        data,
     });
 };
 

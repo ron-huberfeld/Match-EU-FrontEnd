@@ -30,11 +30,11 @@ const RegisterForm = () => {
     const [signupError, setSignupError] = useState();
     const [redirectOnLogin, setRedirectOnLogin] = useState(false);
     const [loginLoading, setLoginLoading] = useState(false);
-    const onSubmit = async (data) => {
+    const onSubmit = async (credentials) => {
         try {
             setLoginLoading(true);
-            const { result } = await LoginServices.register(data);
-            authContext.setAuthState(result);
+            const { data } = await LoginServices.register(credentials);
+            authContext.setAuthState(data);
             setSignupSuccess(data.message);
             setSignupError(null);
 
@@ -43,8 +43,13 @@ const RegisterForm = () => {
             }, 700);
         } catch (error) {
             setLoginLoading(false);
-            // const { errData } = error;
-            setSignupError('Error occured');
+            const resMessage =
+                (error.response &&
+                    error.response.data &&
+                    error.response.data.message) ||
+                error.message ||
+                error.toString();
+            setSignupError(resMessage);
             setSignupSuccess(null);
         }
     };
@@ -84,7 +89,7 @@ const RegisterForm = () => {
                                                 <Label text="First Name" />
                                             </div>
                                             <input
-                                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
+                                                className="appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
                                                 aria-label="First Name"
                                                 name="firstName"
                                                 type="text"
@@ -97,7 +102,7 @@ const RegisterForm = () => {
                                                 <Label text="Last Name" />
                                             </div>
                                             <input
-                                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
+                                                className="appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
                                                 aria-label="Last Name"
                                                 name="lastName"
                                                 type="text"
@@ -111,7 +116,7 @@ const RegisterForm = () => {
                                             <Label text="Email address" />
                                         </div>
                                         <input
-                                            className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
+                                            className="appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
                                             aria-label="Email address"
                                             name="email"
                                             type="email"
@@ -125,7 +130,7 @@ const RegisterForm = () => {
                                             <Label text="Password" />
                                         </div>
                                         <input
-                                            className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
+                                            className="appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
                                             aria-label="Password"
                                             name="password"
                                             type="password"

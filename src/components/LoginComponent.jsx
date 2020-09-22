@@ -29,11 +29,11 @@ const LoginForm = () => {
     const [loginLoading, setLoginLoading] = useState(false);
     const [redirectOnLogin, setRedirectOnLogin] = useState(false);
 
-    const onSubmit = async (data) => {
+    const onSubmit = async (credentials) => {
         try {
             setLoginLoading(true);
-            const { result } = await LoginServices.login(data);
-            authContext.setAuthState(result);
+            const { data } = await LoginServices.login(credentials);
+            authContext.setAuthState(data);
             setLoginSuccess(data.message);
             setLoginError(null);
 
@@ -42,8 +42,13 @@ const LoginForm = () => {
             }, 700);
         } catch (error) {
             setLoginLoading(false);
-            // const { errData } = error;
-            setLoginError('Error occured');
+            const resMessage =
+                (error.response &&
+                    error.response.data &&
+                    error.response.data.message) ||
+                error.message ||
+                error.toString();
+            setLoginError(resMessage);
             setLoginSuccess(null);
         }
     };
